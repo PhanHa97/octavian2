@@ -1,0 +1,78 @@
+.footer{
+    background-color: $gray-dark;
+    &-top{
+        padding: 100px 0;
+    }
+    &-main{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 0 130px;
+    }
+    &-logo{
+        display: inline-block;
+        margin-bottom: 40px;
+    }
+    &-desc{
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+    &-social{
+        display: flex;
+        align-items: center;
+        gap: 0 30px;
+    }
+    &-heading{
+        font-size: 18px;
+        color: white;
+        margin-bottom: 40px;
+        font-weight: bold;
+    }
+    &-link{
+        list-style: none    ;
+    }
+    &-item{
+        margin-bottom: 30px;
+    }
+    &-info{
+        list-style: none;
+        margin-bottom: 40px;
+        li{
+            margin-bottom: 15px;
+            line-height: 1.875;
+        }
+    }
+    &-bottom{
+        background-color: $gray-darker;
+        line-height: 1.6;
+    }
+    &-bottom a{
+        color: white;
+    }
+    &-container{
+        padding-top: 60px;
+        padding-bottom: 60px;
+        position: relative;
+    }
+    &-rocket{
+        background-color: $blue-color;
+        width: 70px;
+        height: 70px;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateY(-50%);
+        z-index: 2;
+    }&-highlight{
+        color: white;
+    }
+    @include maxw(1023px){
+        &-main{
+            grid-gap: 0 30px;
+        }
+    }
+}
